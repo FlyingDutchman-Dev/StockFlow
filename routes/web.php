@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/*Route::get('/config', function () {
+    return view('config');
+});
+*/
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/config', [App\Http\Controllers\ConfigController::class, 'index'])->name('config');
 
 Auth::routes();

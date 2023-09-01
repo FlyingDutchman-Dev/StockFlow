@@ -6,8 +6,8 @@
     </a>
 </li>
 <li class="nav-item">
-    <a href="{{ route('home') }}" class="nav-link {{ Request::is('config') ? 'active' : '' }}">
-        <i class="nav-icon fas fa-home"></i>
+    <a href="{{ route('config') }}" class="nav-link {{ Request::is('config') ? 'active' : '' }}">
+        <i class="nav-icon fas fa-cog"></i>
         <p>Configurações</p>
     </a>
 </li>
